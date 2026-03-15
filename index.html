@@ -63,12 +63,12 @@
                 <img
                     src="Influvac Poster Flu Facts A3 size_437242bc-d03a-441a-b093-9b9642143ff4_page-0001.jpg"
                     alt="Influvac Flu Facts Poster"
-                    class="pdf-element"
+                    class="pdf-element clickable-image"
                     loading="lazy">
                 <img
                     src="2.jfif"
                     alt="Additional flu information image"
-                    class="pdf-element"
+                    class="pdf-element clickable-image"
                     loading="lazy">
             </div>
         </section>
@@ -179,6 +179,10 @@
                     </p>
                 </div>
                 <div class="boost-banner reveal" role="region" aria-label="Boost immunity">
+                    <span class="corner-mark top-left"></span>
+                    <span class="corner-mark top-right"></span>
+                    <span class="corner-mark bottom-left"></span>
+                    <span class="corner-mark bottom-right"></span>
                     <span class="boost-icon" aria-hidden="true"><i data-lucide="syringe"></i></span>
                     <div>
                         <p class="boost-headline"><span class="hi">Boost</span> Immunity</p>
@@ -194,6 +198,7 @@
             </div>
         </section>
         <section class="cta-section reveal" aria-labelledby="cta-heading">
+            <div class="grid-pattern"></div>
             <span class="section-label">Take Action</span>
             <h2 id="cta-heading" class="cta-title">Get Vaccinated Today</h2>
             <p class="cta-desc">One shot can stop the spread. Find a vaccination center near you.</p>
@@ -214,6 +219,23 @@
         </footer>
 
     </main>
+
+    <!-- Image Lightbox Modal -->
+    <div class="image-lightbox" id="imageLightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+        <button class="lightbox-close" aria-label="Close image viewer">
+            <i data-lucide="x"></i>
+        </button>
+        <button class="lightbox-nav lightbox-prev" aria-label="Previous image">
+            <i data-lucide="chevron-left"></i>
+        </button>
+        <button class="lightbox-nav lightbox-next" aria-label="Next image">
+            <i data-lucide="chevron-right"></i>
+        </button>
+        <div class="lightbox-content">
+            <img src="" alt="" class="lightbox-image" id="lightboxImage">
+        </div>
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
 
     <script src="script.js"></script>
 </body>
