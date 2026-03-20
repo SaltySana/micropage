@@ -33,19 +33,12 @@
                 </header>
             </div>
             <div class="video-wrapper" role="region" aria-label="Educational video about flu prevention">
-                    <video
-                        class="video-element"
-                        controls
-                        playsinline
-                        preload="metadata"
-                        poster="path/to/poster-image.jpg"
-                        aria-label="Flu prevention educational video"
-                        webkit-playsinline="true">
-                        <source src="https://drive.google.com/file/d/1e_45ocMQmyZ_sZwffrJej0UHlNB7lCX6/view?usp=sharing" type="video/mp4">
-                        <track kind="captions" src="path/to/captions.vtt" srclang="en" label="English">
-                        <p>Your browser does not support video.
-                           <a href="samplevid.mp4">Download the video</a> instead.</p>
-                    </video>
+                <iframe
+                    src="https://drive.google.com/file/d/1e_45ocMQmyZ_sZwffrJej0UHlNB7lCX6/preview"
+                    allow="autoplay; encrypted-media"
+                    allowfullscreen
+                    title="Flu prevention educational video">
+                </iframe>
             </div>
         </section>
         <section class="section--white pdf-section" aria-labelledby="pdf-heading">
